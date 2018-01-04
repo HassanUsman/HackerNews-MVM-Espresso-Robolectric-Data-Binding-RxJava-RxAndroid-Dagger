@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/indicator"
+            app:layout_constraintStart_toEndOf="@+id/indicator"
+            app:layout_constraintTop_toTopOf="@+id/indicator" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/by"
+            app:layout_constraintStart_toEndOf="@+id/by"
+            app:layout_constraintTop_toTopOf="@+id/by" />
+
+
+        <org.sufficientlysecure.htmltextview.HtmlTextView
+            android:id="@+id/comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/by"
+            app:layout_constraintTop_toBottomOf="@+id/by" />
+
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_drop_up_black_24px"
+            android:contentDescription="image" />
+
+        <TextView
+            android:id="@+id/kid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/comment"
+            app:layout_constraintTop_toBottomOf="@+id/comment" />
+    </android.support.constraint.ConstraintLayout>
+</layout>
