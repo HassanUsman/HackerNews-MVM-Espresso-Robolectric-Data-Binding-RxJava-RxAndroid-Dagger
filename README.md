@@ -26,3 +26,6 @@ Libraries used in this sample project:
 - Mockito
 - Robolectric
 - Espresso
+ 
+ ## Maintainer
+[![HassanUsman](https://avatars0.githubusercontent.com/u/10232094?v=4&s=40) HassanUsman](https://github.com/HassanUsman)  
