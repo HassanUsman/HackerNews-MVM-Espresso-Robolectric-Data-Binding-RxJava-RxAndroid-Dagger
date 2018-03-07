@@ -2,7 +2,7 @@
 
 This sample project is to demostrate an android app built for https://github.com/HackerNews/API. It has 2 pages, top stories and comment. 
 
-## Objective
+## Objective 
 The objective of the project is to demostrate:
 - implementation of MVP
 - unit test 
